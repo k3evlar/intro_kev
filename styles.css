@@ -9,27 +9,36 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 nav .logo, nav a {
     font-family: 'Orbitron', sans-serif;
     color: #f00;
     text-decoration: none;
+    text-shadow: 0 0 5px #f00;
+    margin: 0 15px;
 }
 nav a:hover {
     color: #ff3300;
 }
 header, section, footer {
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 20px;
 }
 h1 {
     font-size: 4rem;
+    color: #f00;
+    text-shadow: 0 0 10px #f00, 0 0 20px #ff3300;
+}
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     color: #f00;
     text-shadow: 0 0 10px #f00;
 }
@@ -47,10 +56,11 @@ p {
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 0 20px #f00;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .neon-btn:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 30px #ff3300, 0 0 40px #ff3300;
 }
 .matrix {
     position: absolute;
@@ -72,4 +82,19 @@ p {
 @keyframes drop {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100vh); }
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.images img {
+    width: 100%;
+    border: 2px solid #f00;
+    box-shadow: 0 0 10px #f00;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff3300;
 }
