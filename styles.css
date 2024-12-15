@@ -98,3 +98,24 @@ p {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ff3300;
 }
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav .logo, nav a {
+        margin: 10px 0;
+    }
+    header, section, footer {
+        padding: 80px 20px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
