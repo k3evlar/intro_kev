@@ -104,27 +104,6 @@ p {
     0% { transform: scale(1.05); }
     100% { transform: scale(1.1); }
 }
-
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-    }
-    nav .logo, nav a {
-        margin: 10px 0;
-    }
-    header, section, footer {
-        padding: 80px 20px;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-}
 .video-background {
     position: fixed;
     top: 0;
@@ -140,5 +119,3 @@ video#bgVideo {
     object-fit: cover;
     opacity: 0.5; /* Adjust opacity as needed for watermark effect */
 }
-
-
